@@ -15,6 +15,7 @@ use crate::{
     },
 };
 
+#[allow(unstable_name_collisions)]
 pub fn verify_ecdsa_signature(
     vm: &mut VirtualMachine,
     ids_data: &HashMap<String, HintReference>,

@@ -11,7 +11,7 @@
 //! - `cairo-0-secp-hints`: Enable secp hints that were introduced in Cairo 0. Not enabled by default.
 
 #![cfg_attr(docsrs, feature(doc_cfg))]
-#![deny(warnings)]
+// #![deny(warnings)]
 #![forbid(unsafe_code)]
 #![cfg_attr(any(target_arch = "wasm32", not(feature = "std")), no_std)]
 

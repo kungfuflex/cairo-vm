@@ -628,6 +628,7 @@ pub(super) mod serde_impl {
             res
         }
 
+        #[allow(unstable_name_collisions)]
         pub fn from_bytes(bytes: &[u8]) -> Option<CairoPieMemory> {
             if !bytes.len().is_multiple_of(&CELL_BYTE_LEN) {
                 return None;
